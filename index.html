@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IMC</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="titulo">Suspensão de meio de cultura</h1>
+
+        <div class="form">
+            <form action="">
+                <div class="input">
+                    <select id="select">
+                        <option value="">Selecionar</option>
+                        <option value="">BHI Broth</option>
+                        <option value="">BHI Ágar</option>
+                        <option value="">Mitis salivarius Ágar</option>
+                        <option value="">Mycosel Ágar</option>
+                        <option value="">Sabouraud dextrose Ágar</option>
+                        <option value="">Triptina Soja Broth TSB</option>
+                        <option value="">Triptona Soja Agar TSA</option>
+                        <option value="">MacConkey</option>
+                        <option value="">Ágar Batata</option>
+                        <option value="">Ágar CLED</option>
+                        <option value="">Mueller Hinton</option>
+                        <option value="">Ágar Manitol Salt</option>
+                    </select>
+
+
+                </div>
+
+                <div class="input">
+                    <label for="">Volume desejado (ml)</label>
+                    <input type="number" id="volume" required/>
+                </div>
+<hr>
+                <button type="submit" id="calcular">Calcular</button>
+
+
+
+            </form>
+
+        </div>
+        <div class="resultado">
+            <span id="textResultado"></span>
+        </div>
+    </div>
+    <BR>
+    <div class="obs"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
