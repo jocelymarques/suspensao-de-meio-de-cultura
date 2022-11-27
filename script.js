@@ -38,8 +38,6 @@ btn.addEventListener("click", function (e) {
     
         document.querySelector("#textResultado").innerHTML = `Diluir ${resultado} g de ${opcaoTexto}<BR>em ${volume} ml de água`
         
-        document.querySelector(".obs").innerHTML = `* Base para calculo ${volSubstancancia} g de ${opcaoTexto} para cada 1 litro de água`
-    
     }
 
 
