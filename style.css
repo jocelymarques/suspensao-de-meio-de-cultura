@@ -88,7 +88,7 @@ input {
     padding: 5px;
 }
  
-#calcular {
+#calcular, #limpar {
     padding: 10px;
     border-radius: 40px;
     border: 1px solid #ccc;
@@ -131,4 +131,16 @@ table{
     text-align: center;
     margin-top: 80px;
     color: gray;;
+}
+.btnContainer{
+ display: flex;
+}
+
+#limpar{
+
+    background-color: rgb(252, 252, 252);
+    color: purple;
+    border: 1px solid purple;
+    margin-right: 10px;
+  
 }

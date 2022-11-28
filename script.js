@@ -15,6 +15,10 @@ const substancias = {
     "Ágar Manitol Salt": 111
 }
 
+function limpar(){
+    document.location.reload(true)
+}
+
 
 
 
