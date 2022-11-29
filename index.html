@@ -12,24 +12,26 @@
 <body>
     <div class="container">
         <h1 class="titulo">Suspensão de meio de cultura</h1>
+        <hr>
 
         <div class="form">
             <form action="">
                 <div class="input">
-                    <select id="select">
-                        <option value="">Selecionar</option>
-                        <option value="">BHI Broth</option>
-                        <option value="">BHI Ágar</option>
-                        <option value="">Mitis <i>salivarius</i> Ágar</option>
-                        <option value="">Mycosel Ágar</option>
-                        <option value="">Sabouraud</option>
-                        <option value="">TSB</option>
-                        <option value="">TSA</option>
-                        <option value="">MacConkey</option>
-                        <option value="">Ágar Batata</option>
-                        <option value="">Ágar CLED</option>
-                        <option value="">Mueller Hinton</option>
-                        <option value="">Ágar Manitol Salt</option>
+                    <label for="">Meio de cultura</label>
+                    <select id="select" onchange="limparCampos()">
+                        <option value="0">Selecionar</option>
+                        <option value="1">BHI Broth</option>
+                        <option value="2">BHI Ágar</option>
+                        <option value="3">Mitis <i>salivarius</i> Ágar</option>
+                        <option value="4">Mycosel Ágar</option>
+                        <option value="5">Sabouraud</option>
+                        <option value="6">TSB</option>
+                        <option value="7">TSA</option>
+                        <option value="8">MacConkey</option>
+                        <option value="9">Ágar Batata</option>
+                        <option value="10">Ágar CLED</option>
+                        <option value="11">Mueller Hinton</option>
+                        <option value="12">Ágar Manitol Salt</option>
                     </select>
 
 
@@ -42,7 +44,7 @@
                 <div class="btnContainer">
 
                     <button type="submit" id="limpar">Limpar</button>
-                    <button type="" id="calcular" onclick="limpar()">Calcular</button>
+                    <button type="" id="calcular">Calcular</button>
                 </div>
                     
 
@@ -50,7 +52,7 @@
             </form>
 
         </div>
-        <div class="resultado">
+        <div id="resultado">
             <span id="textResultado"></span>
         </div>
     </div>

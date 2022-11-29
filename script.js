@@ -19,6 +19,12 @@ function limpar(){
     document.location.reload(true)
 }
 
+function limparCampos(){
+    document.querySelector("#textResultado").innerHTML = ``
+    document.querySelector("#volume").value = ''
+    document.querySelector('#resultado').classList.remove("resultado");
+}
+
 
 
 
@@ -39,9 +45,11 @@ btn.addEventListener("click", function (e) {
         var volSubstancancia = substancias[opcaoTexto]
     
         var resultado  = volSubstancancia * volume /1000
+        var resultado  = resultado.toFixed(3)
     
-        document.querySelector("#textResultado").innerHTML = `Diluir ${resultado} g de ${opcaoTexto}<BR>em ${volume} ml de água`
+        document.querySelector("#textResultado").innerHTML = `Diluir <b><font size=+2>${resultado} g</font size=+1></b> de<BR> <b><font size=+1>${opcaoTexto}</font size=+2></b><BR>em <b><font size=+2>${volume} ml</font size=+2></b> de água`
         
+        document.querySelector('#resultado').classList.add("resultado");
     }
 
 
